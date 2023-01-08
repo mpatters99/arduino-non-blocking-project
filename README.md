@@ -6,4 +6,11 @@ Arduino forum: https://forum.arduino.cc/t/i-used-millis-to-avoid-blocking-but-so
 I used a step motor as well as the HC_SR04.
 If you use any of this code, I suggest you compare it to code from other more experienced programmers as I am still learning. 
 
-The source should be taken from click_me_first.zip.  I also added a terrible schematic (jpg) of the configuration for my own personal notes. 
+// this program should have 5 tabs. Sorry I couldn't figure how how to auto create them. 
+distanceWithAdds.ino  // this is where main() resides
+HC_SR04_check.ino     // this checks to see if the HC_SR04 detects something within 20cm
+HC_SR04_flash.ino     // this flashes the LEDS depending on what the HC_SR04 reports
+setup.ino             // I moved the setup to a separate file
+stepMotor.ino         // this runs constantly but, only moves the step motor if conditions are met
+
+I also added a terrible schematic of the configuration for my own personal notes. 
